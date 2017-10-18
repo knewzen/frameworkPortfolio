@@ -1,0 +1,228 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif; */
+
+.container {
+	width: 100%;
+}
+
+/************ NAV **************/
+
+.nav1 {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #0297A7;
+	position: fixed;
+	z-index: 10;
+}
+
+.nav1 li {
+	list-style: none;
+	display: inline-block;
+}
+
+.nav1 li a {
+	text-decoration: none;
+	display: block;
+	color: #FFF;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.2em;
+	padding: 27px 15px;
+	transition: 0.5s ease background;
+}
+
+.nav1 li a:hover {
+	background-color: rgba(255,255,255,0.2);
+}
+
+.logo {
+	width: 7em;
+	padding: 5px 0px 5px 15px;
+}
+
+
+/************* BANNER ****************/
+
+.banner {
+	width: 100%;
+	position: relative;
+}
+
+.banner img {
+	width: 100%;
+}
+
+.info {
+	width: 50%;
+	position: absolute;
+	z-index: 9;
+	text-align: center;
+	top: 45%;
+	left: 25%;
+	font-family: 'Raleway', sans-serif;
+	color: #FFF;
+}
+
+.info h1 {
+	padding-bottom: 10px;
+	font-size: 3em;
+}
+
+.info p {
+	padding-top: 10px;
+	font-size: 1em;
+}
+
+/*************** MAIN ****************/
+
+
+.frames {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 40px 30px;
+}
+
+.fra {
+	text-align: center;
+	width: 33%;
+	padding: 70px 50px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.fra h3 {
+	margin: 30px 0px 15px 0px;
+	font-size: 1.5em;
+	color: #F8981D;
+}
+
+.fra p {
+	margin-bottom: 20px;
+	color: #757576;
+}
+
+.frame-logo {
+	width: 200px;
+	border-radius: 50%;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.frame-logo:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.btn {
+	width: 50%;
+	margin: auto;
+	text-decoration: none;
+	display: block;
+	padding: 10px 15px;
+	color: #F8981D;
+	font-size: 1.2em;
+	border: 1px solid #F8981D;
+	transition: 0.3s ease background, color;
+}
+
+.btn:hover {
+	background-color: #F8981D;
+	color: #FFF;
+}
+
+/**************** ABOUT ******************/
+
+.aboutme {
+	width: 100%;
+	background-color: #0BBCD4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+}
+
+.aboutme img {
+
+}
+
+.aboutpuri {
+	padding: 0px 110px;
+	color: #FFF;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.aboutpuri h2 {
+	font-size: 2em;
+	margin-bottom: 20px;
+}
+
+/************** THANKS ******************/
+
+@keyframes example {
+    0%   {background-color:#F8981D; left:-200px; top:0px;}
+    25%  {background-color:#F8981D; left:200px; top:0px;}
+    50%  {background-color:#F8981D; left:200px; top:150px;}
+    75%  {background-color:#F8981D; left:-200px; top:150px;}
+    100% {background-color:#F8981D; left:-200px; top:0px;}
+}
+
+/* The element to apply the animation to */
+.thanks div {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    border-radius: 50%;
+    position: relative;
+    background-color: #F8981D;
+    animation-name: example;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+.thanks {
+	width: 100%;
+	padding: 250px 40px;
+	text-align: center;
+}
+
+.thanks p {
+	margin-top:20px; 
+	font-family: 'Open Sans', sans-serif;
+	color: #757576;
+	font-size: 2em;
+}
+
+
+
+/**************** FOOTER ******************/
+
+footer {
+	background-color: #0297A7;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 10px 20px 30px;
+	font-family: 'Open Sans', sans-serif;
+	color: #FFF;
+}
+
+
+
+.icon {
+	width: 70px; 
+	padding: 0px 10px
+}
+
+.socialm {
+	padding: 0px 20px;
+}
+
