@@ -243,6 +243,9 @@ footer {
 }
 
 @media only screen and (max-width: 720px) {	
+	.logo {
+		width: 6em;
+	}
 	.info {
 		top:30%;
 	}
@@ -268,6 +271,9 @@ footer {
 	footer {
 		flex-direction: column;
 	}
+	.banner {
+		margin-bottom: 50px;
+	}
 	.icon {
 		margin: 20px 0px 10px 0px;
 	}
@@ -285,6 +291,18 @@ footer {
 	.info p {
 		padding-top: 10px;
 		font-size: 0.8em;
+	}
+	@keyframes example {
+    0%   {background-color:#F8981D; left:-150px; top:-25px;}
+    25%  {background-color:#F8981D; left:150px; top:-25px;}
+    50%  {background-color:#F8981D; left:150px; top:150px;}
+    75%  {background-color:#F8981D; left:-150px; top:150px;}
+    100% {background-color:#F8981D; left:-150px; top:-25px;}
+	}
+
+	.thanks div {
+    width: 30px;
+    height: 30px;
 	}
 	
 }
@@ -334,7 +352,6 @@ footer {
     100% {background-color:#F8981D; left:-150px; top:-25px;}
 	}
 
-/* The element to apply the animation to */
 	.thanks div {
     width: 30px;
     height: 30px;
