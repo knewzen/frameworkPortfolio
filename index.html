@@ -6,11 +6,12 @@
 	<title>Using different styles</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
 </head>
 <!-- <img src="http://lorempixel.com/400/200/cats"> -->
 <body>
-	<div class="container">
+	<div class="container" id="up">
 	<!-- HEADER -->
 	<header>
 		<nav class="nav1">
@@ -18,9 +19,9 @@
 				<img src="img/logopuri.svg">
 			</div>
 			<ul>
-				<li><a href="#">Intro</a></li>
-				<li><a href="#">Frameworks</a></li>
-				<li><a href="#">About</a></li>
+				<li><a href="#up">Intro</a></li>
+				<li><a href="#fra">Frameworks</a></li>
+				<li><a href="#about">About</a></li>
 			</ul>
 		</nav>
 		<div id="car" class="banner">
@@ -36,7 +37,7 @@
 
 	<!-- MAIN --> 
 	<main>
-		<section class="frames">
+		<section class="frames" id="fra">
 			<div class="fra">
 				<img class="frame-logo" src="img/materialize.png">
 				<h3>Materialize</h3>
@@ -56,7 +57,7 @@
 				<a href="html/bul.html" class="btn">Go!</a>
 			</div>
 		</section>
-		<section class="aboutme">
+		<section class="aboutme" id="about">
 			
 				<img src="img/yo.jpg">
 		
@@ -71,7 +72,10 @@
 		</section>
 	</main>
 	
-
+	<div class="flecha">
+		<a class="up" href="#up"><img src="img/icons/315-arrow-up2.svg"></a>
+		<p>Go up</p>
+	</div>
 	<!-- FOOTER --> 
 	<footer>
 		<div>
@@ -85,6 +89,10 @@
 		</div>
 	</footer>
 	</div>
+
+
+	
 	<script type="text/javascript" src="js/script.js"></script>
+
 </body>
 </html>
