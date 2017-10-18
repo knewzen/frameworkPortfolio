@@ -287,6 +287,32 @@ footer {
 	.thanks p {
 		font-size: 1.5em;
 	}
+	.icon {
+		width: 60px;
+	}
+	.nav1 ul{
+		display: none;
+	}
+	.banner{
+		top:60px;
+	}
+	.info {
+	width: 90%;
+	top: 25%;
+	left: 5%;
+	font-family: 'Raleway', sans-serif;
+	color: #FFF;
+	}
+
+	.info h1 {
+		padding-bottom: 10px;
+		font-size: 1.5em;
+	}
+
+	.info p {
+		padding-top: 10px;
+		font-size: 0.8em;
+	}
 }
 
 
