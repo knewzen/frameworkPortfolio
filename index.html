@@ -21,7 +21,7 @@
 			<ul>
 				<li><a href="#up">Intro</a></li>
 				<li><a href="#fra">Frameworks</a></li>
-				<li><a href="#about">About</a></li>
+				<li><a href="#about" class="nav-last">About</a></li>
 			</ul>
 		</nav>
 		<div id="car" class="banner">
@@ -37,27 +37,30 @@
 
 	<!-- MAIN --> 
 	<main>
-		<section class="frames" id="fra">
+		<span class="anchor" id="fra"></span>
+		<section class="frames">
 			<div class="fra">
-				<img class="frame-logo" src="img/materialize.png">
+				<a href="html/mat.html"><img class="frame-logo" src="img/materialize.png"></a>
 				<h3>Materialize</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni illo, sequi eligendi dignissimos soluta, molestias minus impedit veniam recusandae neque iure a consectetur placeat.</p>
 				<a href="html/mat.html" class="btn">Go!</a>
 			</div>
 			<div class="fra">
-				<img class="frame-logo" src="img/bs.jpg">
+				<a href="html/boot.html"><img class="frame-logo" src="img/bs.jpg"></a>
 				<h3>Bootstrap</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni illo, sequi eligendi dignissimos soluta, molestias minus impedit veniam recusandae neque iure a consectetur placeat.</p>
 				<a href="html/boot.html" class="btn">Go!</a>
 			</div>
 			<div class="fra">
-				<img class="frame-logo" src="img/bulma.png">
+				<a href="html/bul.html"><img class="frame-logo" src="img/bulma.png"></a>
 				<h3>Bulma</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni illo, sequi eligendi dignissimos soluta, molestias minus impedit veniam recusandae neque iure a consectetur placeat.</p>
-				<a href="html/bul.html" class="btn">Go!</a>
+				<a href="html/bul.html" class="btn btn-last">Go!</a>
 			</div>
 		</section>
-		<section class="aboutme" id="about">
+		
+		<span class="anchor2" id="about"></span>
+		<section class="aboutme">
 			
 				<img src="img/yo.jpg">
 		
@@ -92,7 +95,21 @@
 
 
 	
-	<script type="text/javascript" src="js/script.js"></script>
+	<!-- Bootstrap core JavaScript -->
+    <script src="recursos/jquery/jquery.min.js"></script>
+    <script src="recursos/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="recursos/jquery-easing/jquery.easing.min.js"></script>
+    <script src="recursos/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/frameworks.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 
 </body>
 </html>

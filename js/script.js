@@ -14,8 +14,7 @@ var slideIndex = 0;
 				}
 
 
-
-
+/*
 $(document).ready(function(){
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
@@ -39,4 +38,22 @@ $(document).ready(function(){
       });
     } // End if
   });
+});
+
+*/
+
+/*Scroll Down Button*/
+$(function() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html, body').animate({
+                    scrollTop: target.offset().top
+                }, 900);
+                return false;
+            }
+        }
+    });
 });

@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-size: 16px;
 }
 
 /* font-family: 'Open Sans', sans-serif;
@@ -21,7 +22,13 @@ font-family: 'Raleway', sans-serif; */
 	background-color: #0297A7;
 	position: fixed;
 	z-index: 10;
+
 }
+
+.nav-last {
+	margin-right: 20px;
+}
+
 
 .nav1 li {
 	list-style: none;
@@ -53,6 +60,8 @@ font-family: 'Raleway', sans-serif; */
 .banner {
 	width: 100%;
 	position: relative;
+	height:0;
+	padding-bottom:56%; 
 }
 
 .banner img {
@@ -60,28 +69,40 @@ font-family: 'Raleway', sans-serif; */
 }
 
 .info {
-	width: 50%;
+	position:absolute;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
 	position: absolute;
 	z-index: 9;
-	text-align: center;
 	top: 45%;
-	left: 25%;
+	text-align: center;
 	font-family: 'Raleway', sans-serif;
 	color: #FFF;
 }
 
 .info h1 {
 	padding-bottom: 10px;
-	font-size: 3em;
+	font-size: 4em;
+	padding: 0px 400px;
+
 }
 
 .info p {
 	padding-top: 10px;
-	font-size: 1em;
+	font-size:1.7em;
+	padding: 0px 400px;
 }
 
 /*************** MAIN ****************/
 
+.anchor {
+	display: block;
+	height: -170px; /*same height as header*/
+	margin-top: -170px; /*same height as header*/
+	visibility: hidden;
+}
 
 .frames {
 	width: 100%;
@@ -89,7 +110,8 @@ font-family: 'Raleway', sans-serif; */
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
-	padding: 40px 30px;
+	margin-top: 200px;
+	padding: 100px 30px 100px 30px;
 }
 
 .fra {
@@ -130,6 +152,7 @@ font-family: 'Raleway', sans-serif; */
 .btn {
 	width: 50%;
 	margin: auto;
+	margin-bottom: 20px;
 	text-decoration: none;
 	display: block;
 	padding: 10px 15px;
@@ -145,6 +168,12 @@ font-family: 'Raleway', sans-serif; */
 }
 
 /**************** ABOUT ******************/
+.anchor2 {
+	display: block;
+	height: -120px; /*same height as header*/
+	margin-top: -120px; /*same height as header*/
+	visibility: hidden;
+}
 
 .aboutme {
 	width: 100%;
@@ -153,7 +182,8 @@ font-family: 'Raleway', sans-serif; */
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	margin-top: 50px;
+	margin-top: 80px;
+
 }
 
 .aboutme img {
@@ -170,6 +200,8 @@ font-family: 'Raleway', sans-serif; */
 	font-size: 2em;
 	margin-bottom: 20px;
 }
+
+
 
 /************** THANKS ******************/
 
@@ -246,6 +278,16 @@ footer {
 
 /************* MEDIA QUERIES *************/ 
 
+@media only screen and (max-width: 1400px) {
+	.info h1 {
+		padding: 0px 150px;
+	}
+
+	.info p {
+		padding: 0px 150px;
+	}
+}
+
 
 @media only screen and (max-width: 835px) {	
 	.aboutpuri {
@@ -253,6 +295,15 @@ footer {
 	}
 	.thanks {
 	padding: 150px 40px;
+	}
+	.info h1 {
+		padding: 20px 50px 0px 50px;
+		font-size: 2em;
+	}
+
+	.info p {
+		padding: 20px 50px 0px 50px;
+		font-size: 0.9em;
 	}
 }
 
@@ -298,13 +349,13 @@ footer {
 	}
 
 	.info h1 {
-		padding-bottom: 10px;
-		font-size: 1.5em;
+		padding: 20px 50px 0px 50px;
+		font-size: 2em;
 	}
 
 	.info p {
-		padding-top: 10px;
-		font-size: 0.8em;
+		padding: 20px 50px 0px 50px;
+		font-size: 0.9em;
 	}
 	@keyframes example {
     0%   {background-color:#F8981D; left:-150px; top:-25px;}
@@ -354,12 +405,12 @@ footer {
 	}
 
 	.info h1 {
-		padding-bottom: 10px;
+		padding: 10px 0px 0px 0px;
 		font-size: 1.5em;
 	}
 
 	.info p {
-		padding-top: 10px;
+		padding: 10px 0px 0px 0px;
 		font-size: 0.8em;
 	}
 	@keyframes example {
@@ -373,6 +424,18 @@ footer {
 	.thanks div {
     width: 30px;
     height: 30px;
+	}
+
+	.anchor {
+		margin-top: -100px;
+	}
+
+	.anchor2 {
+		margin-top: 60px;
+	}
+	
+	.btn-last {
+		margin-bottom: 20px;
 	}
 }
 
